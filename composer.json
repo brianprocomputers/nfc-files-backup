@@ -1,0 +1,29 @@
+{
+    "name": "procomputers/nfc-files-backup",
+    "description": "A service script to constantly poll the Google Storage container for NFC and pull down a copy of every file.",
+    "type": "project",
+    "require": {
+        "google/cloud-storage": "^1.14",
+        "google/cloud-logging": "^1.18",
+        "zendframework/zend-stdlib": "^3.2",
+        "zendframework/zend-servicemanager": "^3.4"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.9",
+        "dprevite/lint": "^1.0"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tom H Anderson",
+            "email": "tom.h.anderson@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "NFC\\": "library/"
+        }
+    }
+
+}
