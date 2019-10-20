@@ -1,0 +1,18 @@
+<?php
+
+error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE);
+ini_set('display_errors', 1);
+
+
+return [
+    'google' => [
+        'keyFilePath' => __DIR__ . '/dev-nfc-freedomwaytrucks-com-7e6a6efbdab7.json',
+        'storage' => [
+            'filesBucket' => 'dev-files-nfc',
+        ],
+        'logging' => [
+            'prefix' => 'dev-nfc-',
+        ],
+    ],
+];
+
